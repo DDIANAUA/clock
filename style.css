@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria%20Serif:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vujahday%20Script:wght@400&display=swap');
+
+html,
+body {
+	height: 100%;
+	font-size: 100%;
+	margin: 0;
+}
+
+body {
+	background-color: #1d1d1d;
+	font-family: 'Inter', sans-serif;
+	color: #fff;
+	font-weight: 400;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	font-weight: 400;
+}
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+.page {
+	flex: 1 1 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.page__clock {
+}
+.clock {
+}
+.clock__container {
+	width: 1114px;
+	padding-inline: 15px;
+	margin-inline: auto;
+}
+.clock__main-block {
+	padding: 56px 81px 102px;
+	background: url('/img/main-background.jpg') center no-repeat;
+	border-radius: 14px;
+	text-align: center;
+}
+.clock__label {
+	font-family: 'Vujahday Script', serif;
+	color: #000;
+	font-size: 4rem;
+	margin-block-end: 45px;
+}
+.clock__time {
+	font-family: 'Aboreto';
+	color: #121111;
+	font-size: 6rem;
+	margin-block-end: 100px;
+}
+.clock__day {
+	color: #000;
+	font-family: Italianno;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.clock__buttons {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 72px;
+}
+.clock__button {
+	font-family: 'Inria Serif', serif;
+	font-size: 20px;
+	min-height: 73px;
+	display: flex;
+	padding-inline: 100px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	color: #121212;
+	transition: opacity 0.2s linear;
+}
+
+.clock__button:hover {
+	opacity: 1;
+}
+.clock__button--yellow {
+	background: #a678a0;
+	opacity: 63%;
+}
+.clock__button--green {
+	background: #936a97;
+	opacity: 77%;
+}
+.clock__button--blue {
+	background: #936a97;
+	opacity: 79%;
+}
